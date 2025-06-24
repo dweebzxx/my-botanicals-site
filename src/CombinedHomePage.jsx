@@ -16,8 +16,6 @@ const Card = ({ className, children, ...props }) => (
 );
 
 // --- SVG Icon Components ---
-// Replaced react-icons with inline SVGs to avoid compilation issues.
-
 const IconSearch = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
@@ -50,7 +48,7 @@ const IconTwitter = ({ size = 24 }) => (
 
 const IconInstagram = ({ size = 24 }) => (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 0 16 16">
-        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372.525-.204.97-.478 1.416-.923.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.282.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.231s.008-2.389.046-3.232c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.884a1.161 1.161 0 1 0 0 2.322 1.161 1.161 0 0 0 0-2.322zM8 4.884a3.116 3.116 0 1 0 0 6.232 3.116 3.116 0 0 0 0-6.232zm0 5.116a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372.525-.204.97-.478 1.416-.923.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.282.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.231s.008-2.389.046-3.232c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.884a1.161 1.161 0 1 0 0 2.322 1.161 1.161 0 0 0 0-2.322zM8 4.884a3.116 3.116 0 1 0 0 6.232 3.116 3.116 0 0 0 0-6.232zm0 5.116a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
     </svg>
 );
 
@@ -68,8 +66,7 @@ const CHEMISTRY_GROUPS = [
 
 export default function CombinedHomePage() {
   const [hovered, setHovered] = useState(null);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  
   return (
     <main className="w-full bg-white text-black font-sans">
       {/* Announcement Bar */}
@@ -93,7 +90,7 @@ export default function CombinedHomePage() {
                 {/* Center: Logo */}
                 <div className="flex-shrink-0 px-4">
                      <div className="flex flex-col items-center">
-                        <img src="/Users/josh/my-botanicals-site/public/images/logo.png" alt="Melissa’s Botanicals Logo" className="w-12 h-12 rounded mb-1" />
+                        <img src="/images/logo.png" alt="Melissa’s Botanicals Logo" className="w-12 h-12 rounded mb-1" />
                         <span className="text-2xl font-bold tracking-tight text-gray-900">
                             MELISSA’S Botanicals
                         </span>
@@ -143,50 +140,22 @@ export default function CombinedHomePage() {
                 </li>
              </ul>
         </div>
-
-        {/* Mobile Menu Button */}
-        <div className="md:hidden flex items-center justify-center border-t border-gray-100 p-2">
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 rounded-md hover:bg-gray-100">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
-                <span className="sr-only">Open menu</span>
-            </button>
-        </div>
-        
-        {/* Mobile Menu Panel */}
-        {isMenuOpen && (
-            <div className="md:hidden">
-                 <ul className="flex flex-col items-center gap-y-4 p-4">
-                  <li><a href="#home" className="hover:text-red-700">Home</a></li>
-                  <li><a href="#singles" className="hover:text-red-700">Essential Oils - Singles</a></li>
-                  <li><a href="#blends" className="hover:text-red-700">Essential Oils - Blends</a></li>
-                  <li><a href="#formulas" className="hover:text-red-700">Formulas</a></li>
-                  <li><a href="#hydrosols" className="hover:text-red-700">Hydrosols</a></li>
-                  <li><a href="#kits" className="hover:text-red-700">Kits</a></li>
-                  <li><a href="#story" className="hover:text-red-700">Our Story</a></li>
-                   <li>
-                        <Button className="bg-red-700 text-white rounded-full px-5 py-2 font-semibold shadow hover:bg-red-800 transition-all text-sm mt-2">
-                            Chemistry Reference Chart
-                        </Button>
-                    </li>
-                 </ul>
-            </div>
-        )}
       </header>
 
       {/* GIF Placeholder Grid */}
       <section className="w-full mt-8">
         <div className="grid grid-cols-1 md:grid-cols-2 w-full">
-            <img src="/Users/josh/my-botanicals-site/public/images/gif-1.gif" alt="Promotional GIF 1" className="w-full h-auto object-cover" />
-            <img src="/Users/josh/my-botanicals-site/public/images/gif-2.gif" alt="Promotional GIF 2" className="w-full h-auto object-cover" />
-            <img src="/Users/josh/my-botanicals-site/public/images/gif-3.gif" alt="Promotional GIF 3" className="w-full h-auto object-cover" />
-            <img src="/Users/josh/my-botanicals-site/public/images/gif-4.gif" alt="Promotional GIF 4" className="w-full h-auto object-cover" />
+            <img src="/images/promo-gif-1.gif" alt="Promotional GIF 1" className="w-full h-auto object-cover" />
+            <img src="/images/promo-gif-2.gif" alt="Promotional GIF 2" className="w-full h-auto object-cover" />
+            <img src="/images/promo-gif-3.gif" alt="Promotional GIF 3" className="w-full h-auto object-cover" />
+            <img src="/images/promo-gif-4.gif" alt="Promotional GIF 4" className="w-full h-auto object-cover" />
         </div>
       </section>
 
       {/* Feature Product Section */}
       <section className="w-full mt-12 mb-12 px-4">
         <div className="bg-purple-50 min-h-[300px] flex flex-col md:flex-row items-center justify-center w-full rounded-2xl p-8 gap-8">
-            <img src="/Users/josh/my-botanicals-site/public/images/feature-serum.PNG" alt="Facial Rejuvenation Serum" className="w-64 h-64 md:w-72 md:h-72 object-cover rounded-lg shadow-lg"/>
+            <img src="/images/feature-serum.jpg" alt="Facial Rejuvenation Serum" className="w-64 h-64 md:w-72 md:h-72 object-cover rounded-lg shadow-lg"/>
             <div className="text-center md:text-left">
                 <h2 className="text-3xl text-purple-800 font-bold mb-3">Feature Product</h2>
                 <p className="text-xl text-purple-700 mb-4">Facial Rejuvenation Serum</p>
@@ -200,19 +169,19 @@ export default function CombinedHomePage() {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-black tracking-tight">Product Lines</h2>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-2 md:px-12">
             <Card className="flex flex-col items-center justify-center p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                <img src="/Users/josh/my-botanicals-site/public/images/product-lavender.JPG" alt="Single Essential Oils" className="w-full h-48 object-cover rounded-md mb-4"/>
+                <img src="/images/product-line-oils.jpg" alt="Single Essential Oils" className="w-full h-48 object-cover rounded-md mb-4"/>
                 <h3 className="text-xl font-semibold text-gray-800">Single Essential Oils</h3>
             </Card>
             <Card className="flex flex-col items-center justify-center p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                <img src="/Users/josh/my-botanicals-site/public/images/product-painless-lotion.jpg" alt="Formulas" className="w-full h-48 object-cover rounded-md mb-4"/>
+                <img src="/images/product-line-formulas.jpg" alt="Formulas" className="w-full h-48 object-cover rounded-md mb-4"/>
                 <h3 className="text-xl font-semibold text-gray-800">Formulas</h3>
             </Card>
             <Card className="flex flex-col items-center justify-center p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                <img src="/Users/josh/my-botanicals-site/public/images/product-rose-hydrosol.jpg" alt="Hydrosols" className="w-full h-48 object-cover rounded-md mb-4"/>
+                <img src="/images/product-line-hydrosols.jpg" alt="Hydrosols" className="w-full h-48 object-cover rounded-md mb-4"/>
                 <h3 className="text-xl font-semibold text-gray-800">Hydrosols</h3>
             </Card>
             <Card className="flex flex-col items-center justify-center p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                <img src="/Users/josh/my-botanicals-site/public/images/product-sinus-kit.jpg" alt="Kits" className="w-full h-48 object-cover rounded-md mb-4"/>
+                <img src="/images/product-line-kits.jpg" alt="Kits" className="w-full h-48 object-cover rounded-md mb-4"/>
                 <h3 className="text-xl font-semibold text-gray-800">Kits</h3>
             </Card>
         </div>
@@ -270,12 +239,12 @@ export default function CombinedHomePage() {
           {/* Testimonials placeholders */}
           <div className="flex flex-col md:flex-row gap-8 mt-8 w-full">
             <Card className="flex-1 bg-white p-6 rounded-lg shadow-lg">
-                <img src="/Users/josh/my-botanicals-site/public/images/testimonial-1.JPG" alt="Testimonial placeholder 1" className="w-full h-32 object-cover rounded-md mb-4"/>
+                <img src="/images/testimonial-1.jpg" alt="Testimonial placeholder 1" className="w-full h-32 object-cover rounded-md mb-4"/>
                 <p className="text-gray-600 italic">"This is a wonderful product! It has changed my life for the better. Highly recommended."</p>
                 <p className="text-right font-semibold text-gray-800 mt-2">- Jane Doe</p>
             </Card>
              <Card className="flex-1 bg-white p-6 rounded-lg shadow-lg">
-                <img src="/Users/josh/my-botanicals-site/public/images/testimonial-2.JPG" alt="Testimonial placeholder 2" className="w-full h-32 object-cover rounded-md mb-4"/>
+                <img src="/images/testimonial-2.jpg" alt="Testimonial placeholder 2" className="w-full h-32 object-cover rounded-md mb-4"/>
                 <p className="text-gray-600 italic">"I was skeptical at first, but now I'm a believer. Fantastic quality and great results."</p>
                 <p className="text-right font-semibold text-gray-800 mt-2">- John Smith</p>
             </Card>
@@ -304,7 +273,7 @@ export default function CombinedHomePage() {
             {/* Logo & Copyright */}
             <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
               <div className="flex items-center mb-2">
-                 <img src="/Users/josh/my-botanicals-site/public/images/logo.png" alt="Melissa’s Botanicals Logo" className="w-10 h-10 rounded" />
+                 <img src="/images/logo-footer.png" alt="Melissa’s Botanicals Logo" className="w-10 h-10 rounded" />
                  <span className="text-xl font-bold ml-2 text-white">MELISSA’S Botanicals</span>
               </div>
               <p className="text-sm text-gray-400 mt-2">&copy; {new Date().getFullYear()} Melissa’s Botanicals. All Rights Reserved.</p>
